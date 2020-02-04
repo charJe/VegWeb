@@ -1,8 +1,8 @@
 :root {
-    --veg-background: #4bb572;
-    --veg-primary: #028446;
-    --veg-secondary: #00561d;
-    --veg-text-color: beige;
+    --background: #4bb572;
+    --primary: #028446;
+    --secondary: #00561d;
+    --text-color: beige;
 }
 
 #topbar {
@@ -11,7 +11,7 @@
     align-items: center;
     
     margin: 0;
-    background-color: var(--veg-background);
+    background-color: var(--background);
     padding: .3em;
         
     position: fixed;
@@ -31,7 +31,7 @@
 }
 
 .text {
-    color: var(--veg-text-color);
+    color: var(--text-color);
 }
 
 #logo {
@@ -44,7 +44,7 @@
 
 .menu-button {
     margin: .6em;
-    background-color: var(--veg-primary);
+    background-color: var(--primary);
 }
 
 #menu-buttons {
