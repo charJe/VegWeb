@@ -1,8 +1,15 @@
 :root {
     --background: #4bb572;
+    --page-background: white;
     --primary: #028446;
-    --secondary: #00561d;
+    --secondary: #14553c;
     --text-color: beige;
+    --text-color-secondary: darkgrey;
+    --text-shadow: #44444488;
+}
+
+body {
+    background-color: var(--page-background);
 }
 
 #topbar {
@@ -13,25 +20,51 @@
     margin: 0;
     background-color: var(--background);
     padding: .3em;
-        
+
     position: fixed;
 	top: 0;
 	right: 0;
 	left: 0;
 	width: 100%;
-    max-height: 2em;
-	margin: 0;
+    height: 2em;
+    padding: 0;
 }
 
 #title {
     font-size: 100%;
-    margin: .2em;
+    margin-top: .2em;
+    margin-bottom: .2em;
     float: center;
-    flex-grow: 2;
+    flex-grow: 1;
+}
+
+h2 > span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    padding-bottom: .1em;
+    text-align: center;
+    color: var(--text-color);
+    text-shadow: 2px 2px var(--text-shadow);
+    background-color: var(--secondary);
+}
+
+h2::before { 
+  display: block; 
+  content: " "; 
+  height: 2.5em;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .text {
     color: var(--text-color);
+    text-shadow: 2px 2px var(--text-shadow);
+}
+
+.menu-button:hover {
+    color: var(--text-color-secondary);
 }
 
 #logo {
@@ -52,7 +85,6 @@
     justify-content: flex-end;
     align-items: center;
     font-size: larger;
-    flex-grow: 1;
 }
 
 .large-menu-button {
