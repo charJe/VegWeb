@@ -35,6 +35,7 @@ body {
     margin-top: .2em;
     margin-bottom: .2em;
     float: center;
+    white-space: nowrap;
     flex-grow: 1;
 }
 
@@ -73,6 +74,7 @@ h2::before {
     float: left;
     padding: 0;
     margin: 0;
+    flex-shrink: 1;
 }
 
 .menu-button {
