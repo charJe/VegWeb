@@ -8,6 +8,18 @@
     --text-shadow: #44444488;
 }
 
+.primary {
+    background-color: var(--primary);
+}
+
+.secondary {
+    background-color: var(--secondary);
+}
+
+.background {
+    background-color: var(--background )
+}
+
 body {
     background-color: var(--page-background);
 }
@@ -39,6 +51,14 @@ body {
     flex-grow: 1;
 }
 
+h2::before { 
+  display: block; 
+  content: " "; 
+  height: 2.5em;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 h2 > span {
     position: absolute;
     left: 0;
@@ -51,21 +71,13 @@ h2 > span {
     background-color: var(--secondary);
 }
 
-h2::before { 
-  display: block; 
-  content: " "; 
-  height: 2.5em;
-  visibility: hidden;
-  pointer-events: none;
+h2 {
+    margin-bottom: 2em;
 }
 
 .text {
     color: var(--text-color);
     text-shadow: 2px 2px var(--text-shadow);
-}
-
-.menu-button:hover {
-    color: var(--text-color-secondary);
 }
 
 #logo {
@@ -87,6 +99,47 @@ h2::before {
     justify-content: flex-end;
     align-items: center;
     font-size: larger;
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+#sponsor-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#sponsor-body > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1em;
+}
+
+#sponsor-body > div > a >img {
+    width: auto;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+img[alt="Vegan Rob's"] {
+    height: 20vw;    
+}
+
+img[alt="Hurraw"] {
+    height: 8vw;
+}
+
+img[alt="Mad Hippie"] {
+    height: 12vw;
+}
+
+#sponsor-invite-buttons > button {
+    margin: .5em;
 }
 
 .large-menu-button {
@@ -97,11 +150,31 @@ h2::before {
     display: none;
 }
 
+/* mobile */
 @media screen and (max-width: 600px) {
     .large-menu-button {
         display: none;
     }
+    
     .small-menu-button {
         display: inline;
+    }
+
+    #menu-buttons {
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+
+    img[alt="Vegan Rob's"] {
+        height: 40vw;    
+    }
+
+    img[alt="Hurraw"] {
+        height: 20vw;
+    }
+
+    img[alt="Mad Hippie"] {
+        height: 30vw;
     }
 }
