@@ -1,0 +1,44 @@
+body > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#email-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 50%;
+    padding: 1em;
+    margin: 2em;
+    background: linear-gradient(var(--background), var(--background-gradient));
+}
+
+#email-form > * {
+    margin-top: .5em;
+}
+
+#email-form > label {
+    font-size: larger;
+}
+
+#email-form > input {
+    margin-bottom: .7em;
+    width: 40%;
+}
+
+#email-form > textarea {
+    border: var(--background);
+    max-width: 90%;
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+    #email-form {
+        max-width: 95%;
+    }
+    #email-form > input {
+        width: 90%;
+    }
+}
