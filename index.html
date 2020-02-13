@@ -2,6 +2,8 @@
 <html>
     <head>
         <title>UTD Veg Fest</title>
+        <!-- open links in new tab -->
+        <base target="_blank" rel="noopener noreferrer">
         <!-- font -->
         <meta charset="UTF-8">
   	    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
@@ -27,14 +29,17 @@
             <!-- menu button(s) -->
             <span id="menu-buttons">
                 <a class="btn rounded menu-button text large-menu-button"
+                   target="_self"
                    href="#Sponsors">
                     Sponsors
                 </a>
                 <a class="btn rounded menu-button text large-menu-button"
+                   target="_self"
                    href="#Activites">
                     Activites
                 </a>
                 <a class="btn rounded menu-button text large-menu-button"
+                   target="_self"
                    href="#Team">
                     Team
                 </a>
@@ -43,16 +48,15 @@
                             class="btn rounded menu-button"
                             data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                        <img src="./resources/menu.svg"
-                             type="button"
+                        <img id="main-menu-button-img" src="./resources/menu.svg"
                              aria-label="Menu"
                              alt="Menu" />
                     </button>
                     <ul class="dropdown-menu dropdown-menu-right"
                         aria-labelledby="main-menu-button">
-                        <li><a class="dropdown-item" href="#Sponsors">Sponsors</a></li>
-                        <li><a class="dropdown-item" href="#Activites">Activites</a></li>
-                        <li><a class="dropdown-item" href="#Team">Team</a></li>
+                        <li><a class="dropdown-item" href="#Sponsors" target="_self">Sponsors</a></li>
+                        <li><a class="dropdown-item" href="#Activites" target="_self">Activites</a></li>
+                        <li><a class="dropdown-item" href="#Team" target="_self">Team</a></li>
                     </ul>
                 </span>
             </span>
@@ -78,12 +82,16 @@
                 </a>
             </div>
             <div id="sponsor-invite-buttons" style="margin-top: 5em;">
-                <button class="btn rounded secondary text">
+                <a class="btn rounded accent text"
+                   target="_self"
+                   href="./sponsorship.html#Sponsor">
                     Become a Sponsor
-                </button>
-                <button class="btn rounded background text">
+                </a>
+                <a class="btn rounded background text"
+                   target="_self"
+                   href="./sponsorship.html#Learn-More">
                     Learn More
-                </button>
+                </a>
             </div>
         </div>
         <!-- activites -->
@@ -98,11 +106,6 @@
                 Team
             </span>
         </h2>
-
-
-
-
-
 
 
         <!-- bootstrap -->
