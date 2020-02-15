@@ -4,6 +4,13 @@ body > div {
     align-items: center;
 }
 
+/* learn more sponsorship styling */
+#learn-more-body {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+/* email form styling */
 #email-form {
     display: flex;
     flex-direction: column;
@@ -31,6 +38,7 @@ body > div {
 #email-form > textarea {
     border: var(--background);
     max-width: 90%;
+    padding: .5em;
 }
 
 #learn-more-body {
