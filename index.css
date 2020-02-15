@@ -80,7 +80,7 @@ h2 > span {
 }
 
 h2 {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 /* about section styling */
@@ -89,6 +89,7 @@ h2 {
     flex-direction: column;
     align-items: center;
 }
+
 #about-body > h4:last-child {
     margin-top: 1em;
 }
@@ -102,6 +103,7 @@ h2 {
     margin-right: 2em;
     //margin-bottom: 2em;
 }
+
 #about-body > p {
     margin-top: .25em;
 }
@@ -184,6 +186,7 @@ img[alt="Mad Hippie"] {
 
 #activities-body {
     background: url(./resources/lettus.jpg) 99% no-repeat;
+    margin-top: -2em;
     margin-bottom: -6em;
 }
 /* mobile */
