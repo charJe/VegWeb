@@ -160,6 +160,10 @@ img[alt="Mad Hippie"] {
     height: 12vw;
 }
 
+img[alt="Tofutti"] {
+    height: 15vw;
+}
+
 #sponsor-invite-buttons > a {
     margin: .5em;
 }
@@ -224,7 +228,11 @@ img[alt="Mad Hippie"] {
         margin-left: 0;
         margin-right: 0;
     }
-
+    
+    #sponsor-body > div {
+        justify-content: center;
+    }
+    
     img[alt="Vegan Rob's"] {
         height: 40vw;    
     }
@@ -234,9 +242,13 @@ img[alt="Mad Hippie"] {
     }
 
     img[alt="Mad Hippie"] {
-        height: 30vw;
+        height: 32vw;
     }
-
+    
+    img[alt="Tofutti"] {
+        height: 45vw;
+    }
+    
     .card-deck {
         width: 90%;
         margin: auto;
