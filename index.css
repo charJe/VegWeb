@@ -27,8 +27,23 @@
     background-color: var(--accent);
 }
 
+.text {
+    color: var(--text-color);
+    text-shadow: 2px 2px var(--text-shadow);
+}
+
 body {
     background-color: var(--page-background);
+}
+
+body > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-bottom: 5em;
+    max-width: 99%;
 }
 
 #topbar {
@@ -59,59 +74,6 @@ body {
     flex-grow: 1;
 }
 
-h2::before { 
-    display: block; 
-    content: " "; 
-    height: 2.5em;
-    visibility: hidden;
-    pointer-events: none;
-}
-
-h2 > span {
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    padding-bottom: .1em;
-    text-align: center;
-    color: var(--text-color);
-    text-shadow: 2px 2px var(--text-shadow);
-    background-color: var(--secondary);
-    background: linear-gradient(var(--secondary), var(--secondary-gradient));
-}
-
-h2 {
-    margin-bottom: 2em;
-}
-
-/* about section styling */
-#about-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#about-body > h4:last-child {
-    margin-top: 1em;
-}
-
-#about-body > h4:first-child {
-    margin-bottom: 1em;
-}
-
-#about-body > h4 {
-    margin-left: 2em;
-    margin-right: 2em;
-    //margin-bottom: 2em;
-}
-#about-body > p {
-    margin-top: .25em;
-}
-
-.text {
-    color: var(--text-color);
-    text-shadow: 2px 2px var(--text-shadow);
-}
-
 #logo {
     width: 3em;
     height: auto;
@@ -126,6 +88,10 @@ h2 {
     background-color: var(--primary);
 }
 
+.menu-button:active {
+    background-color: var(--secondary);
+}
+
 #menu-buttons {
     display: flex;
     justify-content: flex-end;
@@ -135,12 +101,36 @@ h2 {
     margin-right: .5em;
 }
 
-#sponsor-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 2em;
-    padding-right: 2em;
+.large-menu-button {
+    display: inline;
+}
+
+.small-menu-button {
+    display: none;
+}
+
+h2:before { 
+    display: block; 
+    content: " "; 
+    height: 2.5em;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+h2 > span {
+    position: absolute;
+    right: 0;
+    left: 0;
+    padding-bottom: .1em;
+    text-align: center;
+    color: var(--text-color);
+    text-shadow: 2px 2px var(--text-shadow);
+    background-color: var(--secondary);
+    background: linear-gradient(var(--secondary), var(--secondary-gradient));
+}
+
+h2 {
+    margin-bottom: 2em;
 }
 
 #sponsor-body > div {
@@ -174,12 +164,43 @@ img[alt="Mad Hippie"] {
     margin: .5em;
 }
 
-.large-menu-button {
-    display: inline;
+#activites-body, #team-body  {
+    background: url(./resources/lettus.jpg) no-repeat;
+    max-width: 100%;
+    margin-top: -2em;
+    margin-bottom: -6em;
 }
 
-.small-menu-button {
-    display: none;
+#team-body, #activites-body > div {
+    padding-top: 2em;
+    padding-bottom: 100em;
+}
+
+.card-img-top {
+    padding-top: 1em;
+    margin: auto;
+    max-width: 400px;
+}
+
+.card {
+    background: linear-gradient(var(--text-color), var(--page-background));
+}
+
+/* about section styling */
+#about-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#about-body > h4:last-child {
+    margin-top: 1em;
+}
+
+#about-body > p {
+    margin-top: .25em;
 }
 
 /* team styling */
@@ -189,6 +210,13 @@ img[alt="Mad Hippie"] {
 
 /* mobile */
 @media screen and (max-width: 600px) {
+    body > div {
+        padding-left: 0em;
+        padding-right: 0em;
+        margin-bottom: 5em;
+        max-width: 99%;
+    }
+
     .large-menu-button {
         display: none;
     }
@@ -200,7 +228,6 @@ img[alt="Mad Hippie"] {
     #menu-buttons {
         margin-left: 0;
         margin-right: 0;
-
     }
 
     img[alt="Vegan Rob's"] {
@@ -213,5 +240,15 @@ img[alt="Mad Hippie"] {
 
     img[alt="Mad Hippie"] {
         height: 30vw;
+    }
+
+    .card-deck {
+        width: 90%;
+        margin: auto;
+    }
+    .card-deck > .card {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

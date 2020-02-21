@@ -41,6 +41,10 @@ body > div {
     padding: .5em;
 }
 
+#learn-more-body {
+    padding-top: 2em;
+}
+
 /* mobile */
 @media screen and (max-width: 600px) {
     #email-form {
