@@ -182,6 +182,11 @@ img[alt="Mad Hippie"] {
     display: none;
 }
 
+/* team styling */
+#card-deck {
+    width: 99%;
+}
+
 /* mobile */
 @media screen and (max-width: 600px) {
     .large-menu-button {
