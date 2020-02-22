@@ -207,6 +207,11 @@ img[alt="Tofutti"] {
     margin-top: .25em;
 }
 
+/* team styling */
+#card-deck {
+    width: 99%;
+}
+
 /* mobile */
 @media screen and (max-width: 600px) {
     body > div {
