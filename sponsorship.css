@@ -10,16 +10,26 @@ body > div {
     margin-right: 2em;
 }
 
+.card {
+    max-width: 50%;
+    padding: 1em;
+    margin: 2em;
+    background: linear-gradient(var(--background), var(--background-gradient));
+}
+
+.card > h3 {
+    text-align: center;
+}
+.card > * {
+    margin-bottom: 1em;
+}
+
 /* email form styling */
 #email-form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    max-width: 50%;
-    padding: 1em;
-    margin: 2em;
-    background: linear-gradient(var(--background), var(--background-gradient));
 }
 
 #email-form > * {
