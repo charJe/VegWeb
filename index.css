@@ -133,6 +133,10 @@ h2 {
     margin-bottom: 2em;
 }
 
+p {
+    font-size: larger;
+}
+
 #sponsor-body > div {
     display: flex;
     flex-direction: row;
@@ -173,11 +177,16 @@ img[alt="Tofutti"] {
     max-width: 100%;
     margin-top: -2em;
     margin-bottom: -6em;
+    padding-bottom: 5.5em;
 }
 
 #team-body, #activites-body > div {
+    display: felx;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding-top: 2em;
-    padding-bottom: 100em;
+    width: 99%;
 }
 
 .card-img-top {
@@ -186,8 +195,9 @@ img[alt="Tofutti"] {
     max-width: 400px;
 }
 
-.card {
+.card-deck > .card {
     background: linear-gradient(var(--text-color), var(--page-background));
+    max-width: 33%;
 }
 
 /* about section styling */
@@ -205,11 +215,6 @@ img[alt="Tofutti"] {
 
 #about-body > p {
     margin-top: .25em;
-}
-
-/* team styling */
-#card-deck {
-    width: 99%;
 }
 
 /* mobile */
@@ -262,5 +267,6 @@ img[alt="Tofutti"] {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
+        max-width: 100%;
     }
 }
