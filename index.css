@@ -209,6 +209,10 @@ img[alt="Tofutti"] {
     padding-right: 2em;
 }
 
+#about-body > .column {
+    flex:50%;
+}
+
 #about-body > h4:last-child {
     margin-top: 1em;
 }
