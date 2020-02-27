@@ -4,8 +4,6 @@ body > div {
     align-items: center;
 }
 
-/* learn more sponsorship styling */
-
 .card {
     max-width: 55%;
     padding: 2em;
@@ -16,7 +14,9 @@ body > div {
 .card > h3 {
     text-align: center;
 }
+
 .card > * {
+    margin-top: .5em;
     margin-bottom: 1em;
 }
 
@@ -35,18 +35,14 @@ table tr:nth-child(odd) {
 
 table th {
   color: white;
-  background-color: black;
+  background: var(--background);
 }
-/* email form styling */
+
 #email-form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-}
-
-#email-form > * {
-    //margin-top: .5em;
 }
 
 #email-form > label {
