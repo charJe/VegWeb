@@ -5,10 +5,6 @@ body > div {
 }
 
 /* learn more sponsorship styling */
-#learn-more-body {
-    margin-left: 2em;
-    margin-right: 2em;
-}
 
 .card {
     max-width: 55%;
@@ -72,13 +68,9 @@ table th {
     padding: .5em;
 }
 
-#learn-more-body {
-    padding-top: 2em;
-}
-
 /* mobile */
 @media screen and (max-width: 600px) {
-    #email-form {
+    .card {
         max-width: 95%;
     }
     #email-form > input {

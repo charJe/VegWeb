@@ -200,10 +200,10 @@ img[alt="Tofutti"] {
     max-width: 33%;
 }
 
-/* about section styling */
 #about-body {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     padding-left: 2em;
     padding-right: 2em;
@@ -219,6 +219,10 @@ img[alt="Tofutti"] {
 
 #about-body > p {
     margin-top: .25em;
+}
+
+video {
+    max-width: 50%;
 }
 
 /* mobile */
