@@ -7,8 +7,8 @@ body > div {
 /* learn more sponsorship styling */
 
 .card {
-    max-width: 50%;
-    padding: 1em;
+    max-width: 55%;
+    padding: 2em;
     margin: 2em;
     background: linear-gradient(var(--background), var(--background-gradient));
 }
@@ -29,11 +29,15 @@ body > div {
 }
 
 #email-form > * {
-    margin-top: .5em;
+    //margin-top: .5em;
 }
 
 #email-form > label {
     font-size: larger;
+}
+
+#email-form > sponsor-subject {
+    margin-bottom: 1em;
 }
 
 #email-form > input {
