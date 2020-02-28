@@ -203,7 +203,7 @@ img[alt="Tofutti"] {
 #about-body {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding-left: 2em;
     padding-right: 2em;
@@ -213,16 +213,24 @@ img[alt="Tofutti"] {
     flex:50%;
 }
 
-#about-body > h4:last-child {
-    margin-top: 1em;
+#about-body > div > h4 {
+    margin-bottom: 1.5em;
 }
 
 #about-body > p {
     margin-top: .25em;
 }
 
-video {
+#about-body > div {
+    padding: 3em;
+}
+
+#about-body > .card {
     max-width: 50%;
+}
+
+video {
+    max-width: 100%;
 }
 
 /* mobile */
@@ -271,10 +279,27 @@ video {
         width: 90%;
         margin: auto;
     }
+    
     .card-deck > .card {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
         max-width: 100%;
+    }
+
+    #about-body {
+        flex-direction: column;
+        padding: 0;
+        max-width: 90%;
+        margin: 1em;
+    }
+    #about-body > .card {
+        max-width: 100%;
+        padding: 1em;
+    }
+
+    #about-body > div {
+        padding: 0;
+        margin: 1em;
     }
 }
