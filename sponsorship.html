@@ -82,7 +82,7 @@
                 <h4>This year we are hoping to grow the reach of Veg Fest by doubling the length of our event and adding in attention grabbing activities such as a film booth and exciting raffles. We hope you can join us in creating a vegan future!</h4>
                 <h4>
                     Not only will you get your logo on our <a href="./index.html#Sponsors" target="_self">sponsors</a> page,
-                    you will also get direct exposure to everyone who attends The UTD Fest through our promotional emails after the event.
+                    you will also get direct exposure to everyone who attends the UTD Veg Fest through our promotional emails after the event.
                     By supporting our event, you will increase your exposure to UTD students and faculty!
                 </h4>
             </div>
@@ -152,38 +152,42 @@
                 </table>
             </div>
         </div>
-            <h2 id="Sponsor">
-                <span  class="shadow">
-                    Become a Sponsor
-                </span>
-            </h2>
-            <div>
-                <!-- email form -->
-                <div id="email-form" class="card shadow text background">
-                    <h4>
-                        We'd love for you to sponsor us. Send us an email to make it official! 
-                    </h4>
-                    <!-- email box -->
-                    <label for="sponsor-email">Your Email:</label>
-                    <input id="sponsor-email" type="email"
-                           class="input shadow" placeholder="niceveganrestaurant@veg.com" required />
-                    <!-- subject box -->
-                    <label for="sponsor-subject">Subject:</label>
-                    <input id="sponsor-subject" type="email"
-                           class="input shadow" placeholder="Can't Wait to Sponsor UTD Veg Fest!" required />
-                    <label for="sponsor-message">Message:</label>
-                    <!-- message content -->
-                    <textarea cols="50" rows="10" class="textarea shadow rounded"
-                              placeholder="We want to give you some free samples, cook for you, and give you one million dollars!"></textarea>
-                    <button class="btn rounded accent text">
-                        Send
-                    </button>
-                </div>
-            </div>
-            <!-- bootstrap -->
-            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <h2 id="Sponsor">
+            <span  class="shadow">
+                Become a Sponsor
+            </span>
+        </h2>
+        <div>
+            <!-- email form -->
+            <form id="email-form" name="sponsor-email" class="card shadow text background" netlify>
+                <h4>
+                    We'd love for you to sponsor us. Send us an email to make it official! 
+                </h4>
+                <!-- email box -->
+                <label for="sponsor-email">Your Email:</label>
+                <input id="sponsor-email" type="email" name="email"
+                       class="input shadow" placeholder="niceveganrestaurant@veg.com" required />
+                <!-- subject box -->
+                <label for="sponsor-subject">Subject:</label>
+                <input id="sponsor-subject" name="subject" 
+                       class="input shadow" placeholder="Can't Wait to Sponsor UTD Veg Fest!" required />
+                <!-- message content -->
+                <label for="sponsor-message">Message:</label>
+                <textarea cols="50" rows="10"
+                          class="textarea shadow rounded"
+                          name="message"
+                          placeholder="We want to give you some free samples, cook for you, and give you one million dollars!"></textarea>
+                <button class="btn rounded accent text"
+                        type="submit"
+                        target="_self">
+                    Send
+                </button>
+            </form>
+        </div>
+        <!-- bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </body>
 </html>
 

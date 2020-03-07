@@ -11,6 +11,10 @@
     --text-shadow: #44444488;
 }
 
+div#about-body > div.card > h4 > a {
+    text-shadow: 2px 2px #00000000;
+}
+
 .primary {
     background-color: var(--primary);
 }
