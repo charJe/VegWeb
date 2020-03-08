@@ -30,11 +30,11 @@ th, td {
 }
 
 table tr:nth-child(even) {
-  background-color: #eee;
+  background-color: #fff;
 }
 
 table tr:nth-child(odd) {
-  background-color: #fff;
+  background-color: #eee;
 }
 
 table th {
@@ -76,11 +76,23 @@ table th {
     #email-form > input {
         width: 90%;
     }
+
+    /* table styling */
     /* Force table to not be like tables anymore */
+    table {
+        border:none;
+    }
+    th, td {
+        padding:0;
+    }
 	table, thead, tbody, th, td, tr {
 		display: block;
-	}  
- 
+	}
+
+    table tr:nth-child(odd) {
+        background: #ccc;
+    }
+    
 	/* Hide table headers (but not display: none;, for accessibility) */
 	thead tr {
 		position: absolute;
@@ -89,12 +101,9 @@ table th {
 	}
     
     tr {
-      margin: 0 0 1rem 0;
+        margin: 0 0 1rem 0;
     }
-      
-    tr:nth-child(odd) {
-      background: #ccc;
-    }
+    
     
 	td {
 		/* Behave  like a "row" */
@@ -107,16 +116,16 @@ table th {
 	td:before {
 		/* Now like a table header */
 		position: absolute;
-			/* Top/left values mimic padding */
+		/* Top/left values mimic padding */
 		top: 0;
 		left: 6px;
 		width: 45%;
 		padding-right: 10px;
 		white-space: nowrap;
 	}
-
+    
 	/* Label the data
-    You could also use a data-* attribute and content for this. That way "bloats" the HTML, this    way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+    You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
    */
 	td:nth-of-type(1):before { content: "Type"; }
 	td:nth-of-type(2):before { content: "Support"; }
