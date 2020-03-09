@@ -113,6 +113,17 @@ body > div {
     display: none;
 }
 
+#date-time-desktop, #date-time-mobile {
+    margin-top: 2em;
+    margin-bottom: -2em;
+    text-align: center;
+    background: var(--accent);
+}
+
+#date-time-mobile {
+    display: none;
+}
+
 h2:before { 
     display: block; 
     content: " "; 
@@ -262,6 +273,14 @@ video {
     #sponsor-body > div {
         justify-content: center;
     }
+
+    #date-time-desktop {
+        display: none;
+    }
+
+    #date-time-mobile {
+        display: block;
+    }
     
     img[alt="Vegan Rob's"] {
         height: 40vw;    
@@ -306,4 +325,4 @@ video {
         padding: 0;
         margin: 1em;
     }
-}
+}    
