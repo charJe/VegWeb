@@ -124,6 +124,11 @@ body > div {
     display: none;
 }
 
+/* removing shadow from coronavirus link */
+#date-time-desktop > a, #date-time-mobile > a {
+    text-shadow: 2px 2px #00000000;
+}
+
 h2:before { 
     display: block; 
     content: " "; 
@@ -167,24 +172,32 @@ p {
     margin-right: 2em;
 }
 
+img[alt="Miyoko's"] {
+    height:15vw;
+}
+
 img[alt="Vegan Rob's"] {
-    height: 20vw;    
-}
-
-img[alt="Hurraw"] {
-    height: 8vw;
-}
-
-img[alt="Mad Hippie"] {
-    height: 12vw;
+    height: 15vw;    
 }
 
 img[alt="Follow Your Heart"] {
-    height: 20vw;
+    height: 15vw;
+}
+
+img[alt="Mad Hippie"] {
+    height: 13vw;
+}
+
+img[alt="Booda"] {
+    height: 15vw;
+}
+
+img[alt="Hurraw"] {
+    height: 7vw;
 }
 
 img[alt="Tofutti"] {
-    height: 15vw;
+    height: 10vw;
 }
 
 #sponsor-invite-buttons > a {
@@ -251,6 +264,17 @@ img[alt="Tofutti"] {
 video {
     max-width: 100%;
 }
+/* footer */
+footer {
+    background-color: var(--background);
+    background: linear-gradient(var(--background), var(--background-gradient));
+    margin: 0;
+    bottom: 0;
+    margin-top: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* mobile */
 @media screen and (max-width: 600px) {
@@ -285,27 +309,40 @@ video {
     #date-time-mobile {
         display: block;
     }
+
+    /* image resizing */
+    img[alt="Miyoko's"] {
+        height:50vw;
+    }
     
     img[alt="Vegan Rob's"] {
-        height: 40vw;    
-    }
-
-    img[alt="Hurraw"] {
-        height: 20vw;
+        height: 50vw;    
     }
 
     img[alt="Mad Hippie"] {
-        height: 32vw;
+        height: 30vw;
     }
 
     img[alt="Follow Your Heart"] {
-        height: 70vw;
+        height: 50vw;
+        margin: 5px;
+    }
+
+    img[alt="Booda"] {
+        height:30vw;
+        margin: 5px;
     }
     
+    img[alt="Hurraw"] {
+        height: 20vw;
+        margin: 10px;
+    }
+
     img[alt="Tofutti"] {
-        height: 45vw;
+        height: 30vw;
+        margin-top: 10px;
     }
-    
+
     .card-deck {
         width: 90%;
         margin: auto;
