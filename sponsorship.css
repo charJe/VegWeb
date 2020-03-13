@@ -4,8 +4,16 @@ body > div {
     align-items: center;
 }
 
-div#learn-more-body > div.card > h4 > a{
+div#learn-more-body > div.card > h4 > a {
     text-shadow: 2px 2px #00000000;
+}
+
+table {
+    margin: 1.5em;
+}
+
+ul {
+    padding-left: .25em;
 }
 
 .card {
@@ -26,7 +34,7 @@ div#learn-more-body > div.card > h4 > a{
 
 /* sponsorship table styling */
 th, td {
-    padding:1em;
+    padding: 1em;
 }
 
 table tr:nth-child(even) {
@@ -82,8 +90,13 @@ table th {
     table {
         border:none;
     }
+    
+    ul {
+        padding: 0em;
+    }
+    
     th, td {
-        padding:0;
+        padding: .25;
     }
 	table, thead, tbody, th, td, tr {
 		display: block;
