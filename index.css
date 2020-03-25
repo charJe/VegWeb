@@ -185,17 +185,20 @@ img[alt="Vegan Rob's"] {
 }
 
 img[alt="Follow Your Heart"] {
-    height: 15vw;
-}
-
-img[alt="Mad Hippie"] {
     height: 13vw;
 }
 
-img[alt="Booda"] {
-    height: 15vw;
+img[alt="Mad Hippie"] {
+    height: 10vw;
 }
 
+img[alt="Cannasmack"] {
+    height: 5vw;
+}
+
+img[alt="Booda"] {
+    height: 13vw;
+}
 
 img[alt="Tofutti"] {
     height: 10vw;
@@ -314,6 +317,11 @@ footer {
     /* image resizing */
     img[alt="Miyoko's"] {
         height:50vw;
+        margin-bottom: 20px;
+    }
+
+    img[alt="Hurraw"] {
+        height: 20vw;
     }
     
     img[alt="Vegan Rob's"] {
@@ -326,22 +334,20 @@ footer {
 
     img[alt="Follow Your Heart"] {
         height: 50vw;
-        margin: 5px;
     }
 
     img[alt="Booda"] {
-        height:30vw;
+        height:40vw;
         margin: 5px;
     }
     
-    img[alt="Hurraw"] {
-        height: 20vw;
+    img[alt="Cannasmack"] {
+        height: 15vw;
         margin: 10px;
     }
 
     img[alt="Tofutti"] {
         height: 30vw;
-        margin-top: 10px;
     }
 
     .card-deck {
